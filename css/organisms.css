@@ -1,0 +1,119 @@
+nav {
+    width: 100%;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.categories {
+    background-color: #e4a788;
+    grid-column: 3/span 1;
+    grid-row: 3/span 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.social {
+    background-color: #e4a788;
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.regularContent {
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+#heroslider {
+    border: solid black 2px;
+    margin-top: 1em;
+}
+
+/* Javascript classes */
+
+.topNavigation {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    text-align: center;
+    background-color: #e89ac7;
+}
+.topCategories {
+    grid-column: 1/-1;
+    grid-row: 2/span 1;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    background-color: #f0e14a;
+}
+.topSocial {
+    background-color: #e89ac7;
+    grid-column: 3/span 1;
+    grid-row: 1/span 1;
+    text-align: center;
+}
+.mainScreen {
+    grid-column: 1/-1;
+    grid-row: 3/span 1;
+}
+.allScreen {
+    grid-column: 1/-1;
+}
+.rowCategory {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f0e14a;
+    height: 100%;
+}
+@media screen and (max-width:52em) {
+
+    .categories {
+        grid-column: 1/-1;
+        grid-row: 3/span 1;
+    }
+    categoryList {
+        flex-direction: row;
+    }
+    .social {
+        grid-column: 1/-1;
+        grid-row: 6/span 1;
+    }
+
+    /* Javascript classes */
+    .topNavigation {
+        grid-column: 1/-1;
+        grid-row: 2/span 1;
+    }
+    .topCategories {
+        grid-column: 1/-1;
+        grid-row: 3/span 1;
+    }
+    .topSocial {
+        grid-column: 1/-1;
+        grid-row: 5/span 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainScreen {
+        grid-column: 1/-1;
+        grid-row: 4/span 1;
+    }
+    .allScreen {
+        grid-column: 1/-1;
+        grid-row: 6/span 1;
+    }
+    .rowCategory {
+        grid-column: 1/-1;
+        grid-row: 3/span 1;
+    }
+}

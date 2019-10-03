@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>Rick & Morty</title>
+	<style>
+		/* Critical styling goes here */
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- Start content -->
+		<header>
+			<a href="index.html"><img src="./img/header-logo.png" alt=""></a>
+		</header>
+		<nav>
+			<h2>Menu</h2>
+			<ul class="primaryNavigation">
+				<li class="indexSite" ><a href="index.html">Forside</a></li>
+				<li class="primaryNavigation__navigationItem"><a href="henvisninger.html">Henvisninger</a></li>
+				<li class="primaryNavigation__navigationItem"><a href="om.html">Om sitet</a></li>
+			</ul>
+		</nav>
+		<div class="categories">
+			<h2 class="headlineCategories">Kategorier</h2>
+			<ul class="categoryList">
+				<li class="listItemMenu"><a href="index.html?type=character&page=1">Karakterer</a></li>
+				<li class="listItemMenu"><a href="index.html?type=location&page=1">Lokationer</a></li>
+				<li class="listItemMenu"><a href="index.html?type=episode&page=1">Episoder</a></li>
+			</ul>
+		</div>
+		<div class="social">
+		</div>
+		<aside>
+			<div class="quotes">
+				<h3>R & M quotes</h3>
+				<blockquote></blockquote>
+			</div>
+			<section id="heroslider">
+				<h3>Reklamer</h3>
+				<ul id="slides">
+					<li>
+						<img src="img/grill-reklame.png" alt="Hotdog">
+					</li>
+					<li>
+						<img src="img/klemme-reklame.png" alt="Klemmer på snor">
+					</li>
+					<li>
+						<img src="img/web-reklame.png" alt="Gammel computer">
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<main>
+			<div class="categoriesFront">
+				<ul class="categoryListFront">
+					<li class="listItemFront"><a href="index.html?type=character&page=1"><h3>Karakterer</h3><p>En liste over Karakterer der er med i Rick & Morty, find din yndlings!</p></a></li>
+					<li class="listItemFront"><a href="index.html?type=location&page=1"><h3>Lokationer</h3><p>Se hvilken type og dimension de forskellige destinationer har.</p></a></li>
+					<li class="listItemFront"><a href="index.html?type=episode&page=1"><h3>Episoder</h3><p>Hvornår blev det fedeste afsnit i din verden sendt. Find svaret her!</p></a></li>
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<div class="newsletter">
+					<form id="contactForm">
+							<input placeholder="Tilmeld nyhedsbrev" type="text" id="InputMail">
+							<button type="submit" id="InputSend"><i class="fas fa-envelope"></i> Send</button>
+					</form>
+			</div>
+			<p>Copyright 2018 Rick & Morty</p>
+		</footer>
+	</div>
+	<!-- End content -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const stylesheet = document.createElement('link');
+			stylesheet.href = 'css/style.css';
+			stylesheet.rel = 'stylesheet';
+			stylesheet.type = 'text/css';
+			document.getElementsByTagName('head')[0].appendChild(stylesheet);
+		});
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
+	<script src="js/quotes.js" defer></script>
+	<script src="js/api.js" defer></script>
+	<script src="js/commercial.js" defer></script>
+	<script src="js/social.js" defer></script>
+</body>
+</html>

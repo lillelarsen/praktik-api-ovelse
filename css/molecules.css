@@ -1,0 +1,86 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.buildList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.pagination {
+    width: 100%;
+}
+.categoryListFront {
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: row;
+}
+.personLoad {
+    grid-column: 2/span 1;
+    display: grid;
+    grid-template-columns: minmax(20vw, 30vw) minmax(15vw, 25vw);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+}
+.locationLoad, .episodeLoad {
+    flex-direction: column;
+}
+.quotes {
+    width: 95%;
+    background-color: #97ce4c; 
+    border: solid black 2px;
+    text-align: center;
+    align-self: center;
+    grid-row: 3/span 1;
+}
+.newsletter {
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width:52em) {
+    ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .buildList {
+        width: 80%;
+    }
+    .categoryListFront {
+        align-items: center;
+        flex-direction: column;
+    }
+    .personLoad, .locationLoad, .episodeLoad {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .quotes {
+        width: 50%;
+    }
+    .socialMenu ul {
+        width: 20vw;
+    }
+    .socialMenu {
+        grid-column: 1/-1;
+        grid-row: 5/span 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:28em) {
+    .quotes {
+        width: 95%;
+        margin: 1em;
+    }
+
+
+}

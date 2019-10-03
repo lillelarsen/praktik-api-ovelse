@@ -1,0 +1,15 @@
+[
+    {
+    "logo":"fab fa-facebook-f",
+    "webadresse":"http://www.facebook.com",
+    "li_class":"socialMenu__navigationItem"
+    },{
+        "logo":"fab fa-twitter",
+        "webadresse":"http://www.twitter.com",
+        "li_class":"socialMenu__navigationItem"
+    },{
+        "logo":"fab fa-instagram",
+        "webadresse":"http://www.instagram.com",
+        "li_class":"socialMenu__navigationItem"
+    }
+]
